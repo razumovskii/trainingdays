@@ -1,8 +1,8 @@
 title: Azure Developer College
 patterns: ['**/*.md', '!**/node_modules', '!templates/**']
-base: /trainingdays/
+base: /
 themeConfig:
-  repo: 'azuredevcollege/trainingdays'
+  repo: 'razumovskii/trainingdays'
   editLinks: true
   sidebar:
     [

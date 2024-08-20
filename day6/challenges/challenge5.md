@@ -189,7 +189,7 @@ It's time to create our first AKS cluster.
 
 - On the portal, find your Resource Group and on the overview screen click **+ Create**. 
 
-![](./img/acr121.png)
+![](./img/acr12.png)
 
 - Under the the **Containers** click **Kubernetes Service** and after that hit **Create**.
   > This view might have changed. In that case you can just enter "Kubernetes Service" into the search bar.
@@ -209,16 +209,16 @@ It's time to create our first AKS cluster.
   - Node count range: leave as is
 - Click **Integrations**.
 
-![](./img/acr141.png)
+![](./img/acr14.png)
 
 - For Container registry select the ACR instance that we created a few minutes ago.
 - Click **Review + create**.
 
-![](./img/acr151.png)
+![](./img/acr15.png)
 
 - Click **Create** and wait until it has been successfully created. 
   
-![](./img/acr171.png)
+![](./img/acr17.png)
 
 <img src="./img/acr18.png">
 
@@ -235,7 +235,7 @@ Now it's time to deploy our php app to AKS cluster.
 - We're gonna use the [**kubectl**](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands) tool to manage our Kubernetes cluster. Kubernetes command-line tool, ```kubectl```, allows us to run commands against Kubernetes clusters. We can use ```kubectl``` to deploy applications, inspect and manage cluster resources, and view logs. You can either install [```kubectl```](https://kubernetes.io/docs/tasks/tools/) in your terminal or you can use **Azure Cloud Shell** where ```kubectl``` is already installed. 
 If you are going with the first option, execute the next 3 steps:
 - Click **Cloud Shell** icon on the top left right side of the portal screen and open it. 
-  ![](./img/acr01.png)
+  ![](./img/acr1.png)
 - The first time you open the **Cloud Shell** you might need to create a Storage Account. This will persist data for the shell. Just follow the instructions delivered to you from the portal.
 - Once the **Cloud Shell** is up and running you can select between **PowerShell** and **Bash**. Select **Bash** and wait till the shell is up and running. 
 
@@ -366,7 +366,7 @@ docker image push acr_login_url/firstimage:v1
 
 - After that, still in the portal, find your Resource Group and on the overview screen click **+ Create**. 
 
-![](./img/acr121.png)
+![](./img/acr12.png)
 
 - Under the the **Containers** click **Container App** and after that hit **Create**.
   > This view might have changed. In that case you can just enter "Container App" into the search bar.
@@ -381,7 +381,7 @@ docker image push acr_login_url/firstimage:v1
 
 - Click **App settings**. Since we already have images in our Image Registry let's go ahead and use them.
 
-![](./img/acr06.png)
+![](./img/acr6.png)
 
 - Make the following settings
   - Use quickstart image: unselect :black_square_button:
@@ -400,13 +400,13 @@ docker image push acr_login_url/firstimage:v1
 - Hit **Review + create** and on the Overview screen check if everything is correct and hit **Create**
 
 
-![](./img/acr07.png)
+![](./img/acr7.png)
 
 - This might take a while. If the deployment is ready hit **Go to resource**
 
 - On the Overview screen of your newly created ACA find the **Application Url** and click on it.
 
-![](./img/acr08.png)
+![](./img/acr8.png)
 
 **Congrats!!! You have deployed your first image in an Azure Container App.**
 
