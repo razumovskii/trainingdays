@@ -57,7 +57,7 @@ jobs:
           ls -lsa
           git clone https://$TOKEN@github.com/razumovskii/razumovskii.github.io ~/razumovskii/razumovskii.github.io
           rm -r ~/razumovskii/razumovskii.github.io/*
-          cp -R ~/.vuepress/dist ~/razumovskii/razumovskii.github.io
+          cp -R .vuepress/dist ~/razumovskii/razumovskii.github.io
         env:
           TOKEN: ${{ secrets.DEPLOY_TOKEN }}
 
